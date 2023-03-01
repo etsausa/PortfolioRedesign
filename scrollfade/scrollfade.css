@@ -1,0 +1,10 @@
+.invisable{
+    opacity: 0;
+
+    transition: opacity 1s linear 0.5s;
+}
+
+.visable{
+    opacity: 1;
+}
+

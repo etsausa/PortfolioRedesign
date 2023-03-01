@@ -1,0 +1,51 @@
+#bio{
+    /* margin-bottom: 20vh; */
+    font-size: large;
+    
+    gap: 1rem;
+    
+    grid-template-areas: 
+    "a b b" 
+    "c c c" ;
+
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 3fr;
+
+    place-items: center start;
+    align-content: center;
+    
+    /* scroll-padding: 20rem 0 0 0; */
+    scroll-margin-top: 25em;
+}
+
+@media (max-width: 525px){
+    #bio{
+        text-align: center;
+        grid-template-areas: 
+            "a"
+            "b"
+            "c";
+
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr;
+
+        place-items: center;
+        align-content: center;
+    }
+}
+
+#biopic{
+
+}
+
+#bio #a{
+    grid-area: a;
+} 
+
+#bio #b{
+    grid-area: b;
+}
+
+#bio #c{
+    grid-area: c;
+}

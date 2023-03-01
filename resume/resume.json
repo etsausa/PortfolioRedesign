@@ -1,0 +1,66 @@
+{
+    "jobs": [
+        {
+            "title": "Digital Marketing Designer",
+            "company": "Long Island Board of Realtors",
+            "startDate": "April 2021",
+            "endDate": "",
+            "descriptions": [
+                "Oversaw digital and print media content for the REALTOR board and associated MLS",
+                "Worked with multiple brand kits across companies",
+                "Created graphic and video content",
+                "Over saw webpage design, wesite maintenice and publishing",
+                "Designed and launched public awareness campaigns including website, print materials, and branding",
+                "Produced monthly managment repots for Board of Directors",
+                "Produced monthly market reports for members",
+                "Designed serveral weekly email campaigns"
+            ]
+        },
+        {
+            "title": "Freelance Website Developer",
+            "company": "",
+            "startDate": "April 2020",
+            "endDate": "",
+            "descriptions": [
+                "Designed and developed company brands",
+                "Created graphical designs and prototypes in Figma",
+                "Developed, deployed, and maintained company sites"
+            ]
+        },
+        {
+            "title": "IOT Specialist",
+            "company": "Prosegur Inc.",
+            "startDate": "December 2020",
+            "endDate": "March 2021",
+            "descriptions": [
+                "Installed, Wired, and Programed Axis Cameras, Solar Panels, & Servers in Watchtower Units",
+                "Installed and maintained Linux servers",
+                "Wrote Python scripts for Watchtower Units",
+                "Designed technical diagrams for print",
+                "Designed 3D models for testing"
+            ]
+        },
+        {
+            "title": "Motion Graphics Animator",
+            "company": "Park Portable Equipment Center",
+            "startDate": "September 2018",
+            "endDate": "March 2019",
+            "descriptions": [
+                "Developed and created story animatics for educational videos",
+                "Animated & edited using Adobe Illustrator, After Effects, and Premiere Pro",
+                "Worked with clients including Cornell Veterinary & Cornell Botanical"
+            ]
+        },
+        {
+            "title": "Shift Manager",
+            "company": "Park Portable Equipment Center",
+            "startDate": "September 2017",
+            "endDate": "March 2020",
+            "descriptions": [
+                "Inspected and maintained film, photo, and video equipment",
+                "Trained employees on proper equipment handling and safety procedure",
+                "Issued penalties to patrons for policy violations"
+            ]
+        }
+    ]
+}

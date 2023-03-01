@@ -1,0 +1,142 @@
+/* ------------------------------------------------INIT--------------------- */
+
+header, header > h1, header > h3{
+    transition: all 0.5s ease-in-out !important;
+    top: 0;
+    z-index: 5;
+ 
+}
+                                                 /* CONTAINER */
+header{                                    
+    position: sticky;
+    width: 100vw;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: inherit;
+}
+                                                 /* HEADINS */
+header > h1, header > h3{           
+    position: relative;
+    width: fit-content;
+}
+                                                /* CIRCLES */
+header > h3 > img, header.full > h3 > img{ 
+    box-sizing: content-box;
+    transition: all 0.75s ease 0.25s !important;
+
+    animation-name: return;
+    animation-duration: 1s;
+}
+
+
+header > h3 > img:hover{
+    animation-name: turn;
+    animation-duration: 4s;
+}
+
+@keyframes turn {
+    0% {   transform: rotate(0turn);}
+    25% {  transform: rotate(6turn);}
+    50% {  transform: rotate(2turn);}
+    75% {  transform: rotate(3turn);}
+    100% { transform: rotate(0turn);}
+}
+@keyframes return{
+    from { transform: rotate(-1turn);}
+    to {   transform: rotate(0turn);}
+}
+                                                /* ARROW */
+header > #down {
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.01s;
+
+    color: inherit;
+    text-decoration: none;
+
+    margin: 3rem 0 0 0;
+}
+
+header > #down > a{
+    color: inherit;
+    text-decoration: none;
+}
+
+header > #down:hover{
+    font-size: 1.5em;
+}
+
+@keyframes bounce {
+    0% { transform: translate(-50%, 0);}
+    15% { transform: translate(-50%, 0.5rem);}
+    50% {transform: translate(-50%, -0.2rem);}
+    100% {transform: translate(-50%, 0);}  
+}
+
+/* -------------------------------------------------FULL--------------------- */
+                                                 /* CONTAINER */
+
+header.full{
+    font-size:xx-large;
+    top: 40%;
+    text-align: center;
+    /* background-color: blue; */
+}
+                                                 /* HEADINS */
+    header.full > h1, header.full > h3 {
+
+        left: 50%;
+        max-width: 75vw;
+        
+        transform: translateX(-50%); 
+    }
+   
+/* -------------------------------------------------SMALL --------------------- */
+                                                 /* CONTAINER */
+
+header.small{ 
+    font-size: smaller;
+    max-height: 2.5rem;
+    top: 0;
+    /* background: linear-gradient(180deg, rgba(7,7,7,0.75) 10%,rgba(0,0,0,0.0) 65%); */
+    background: rgba(0,0,0,0.7)
+}
+                                                 /* HEADINS */
+    header.small > h1, header.small > h3 {
+        margin: 0;
+        padding: 0;
+        left: 5vw;
+    }
+
+    header.small > h1{
+        font-size: 2rem;
+        line-height: 1.5rem;
+    }
+
+    header.small > h3{
+        font-size: 1rem;
+    }
+                                                 /* CIRCLES */
+    header.small > h3#img{ 
+        transform: rotate(0.25turn) translate(-4rem, 4rem) scale(0.75);
+    }
+    @media (max-width: 525px){
+        header.small > h3#img{ 
+            transform: rotate(0.25turn) translate(-5rem, 5rem) scale(0.75);
+        }
+    }
+                                                 /* ARROW */
+    header.small > #down {
+        visibility: hidden;
+        opacity: 0;
+        top: 90vh;
+        left: 50%;
+
+    }
+
+    
+

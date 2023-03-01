@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    font-family: 'Poppins', sans-serif;
+    background: var(--background);
+    color: var(--text);
+
+    --primary: rgb(108, 108, 255);
+    --text: rgb(245, 245, 245);
+    --background: rgb(7, 7, 7);
+    /* --background: red; */
+    font-size: 18px;
+
+    scroll-behavior:smooth;
+}
+
+body{
+    
+    padding: 0;
+    margin: 0;
+
+    width: auto;
+
+    display: grid;
+    place-items: center;
+    align-content: center;
+
+    overflow-anchor: none;
+    box-sizing: border-box;
+
+    scrollbar-gutter: auto;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+@media (max-width: 525px){
+    :root{
+        font-size: 12px;
+    }
+
+}
+
+h1{
+    font-size: 5rem;
+    margin: 1rem 0 0.25rem 0;
+    /* padding: 0 ; */
+    line-height: 5rem;
+}
+
+h2{
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    line-height: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    line-height: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+    margin: 0 0 0.25rem 0;
+}
+
+p{
+    font-size: 1rem;;
+    /* width: clamp(45ch, 50%, 75ch); */
+}
+
+hr{
+    width: 100%;
+}
+
+section{
+    scroll-padding: 1rem;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    padding: 5rem;
+    /* box-sizing: border-box; */
+}
+@media (max-width: 525px){
+    section{
+        padding: 1rem;
+    }
+
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--primary);
+    background-color: var(--background);
+    padding:  0.5rem 1rem;
+    border: 2px solid var(--primary);
+    border-radius: 0.5em;
+
+    transition: all 0.5s;
+}
+
+button:hover{
+    color:  var(--background);
+    background-color: var(--primary);
+}
