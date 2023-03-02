@@ -7,18 +7,21 @@
 
     <title>etsausa 2022</title>
 
-    <link rel="icon" href="/favicon.ico">
+    <!-- <link rel="icon" href="/favicon.ico"> -->
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="./scrollfade/scrollfade.css"/>
     <link rel="stylesheet" href="./resume/resume.css"/>
     <link rel="stylesheet" href="./header/header.css"/>
     <link rel="stylesheet" href="./bio/bio.css"/>
+    <link rel="stylesheet" href="./portfolio/portfolio.css"/>
 
     <script src="script.js"></script>
     <script src="./resume/resume.js"></script>
     <script defer type="text/javascript" src="./resume/resume.json"></script>
     <script defer src="./scrollfade/scrollfade.js"></script>
     <script src="./header/header.js"></script>
+    <script defer src="./portfolio/portfolio.js"></script>
+
 </head>
 <body>
     
@@ -76,14 +79,20 @@
         <!-- resume gets populated here -->
     </section>
 
-    <section>
+    <section id="portfolio">
         <h2>Projects</h2>
-        <h3>fair housing marketing</h3>
-        <h3>freelance web design</h3>
+        <div class="slider">
+            <span class="projectTitleButton" onclick="includeHTML('./portfolio/file.html')">fair housing marketing</span>
+            <span class="projectTitleButton">freelance web design</span>
+        </div>
         <hr>
+        <div include-html="./portfolio/file.html"></div>
+               
     </section>
 
-    <section>
+    
+
+    <!-- <section>
         <h1>heading 1</h1>
         <h2>heading 2</h2>
         <h3>heading 3</h3>
@@ -97,7 +106,7 @@
             <li>item</li>
         </ul>
 
-    </section>
+    </section> -->
     
 </body>
 </html>

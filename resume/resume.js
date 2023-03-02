@@ -7,7 +7,7 @@ fetch("./resume/resume.json")
     let jobContainer = document.createElement("div");
 
     job.jobs.forEach((job) => {
-      console.log(job.title);
+      // console.log(job.title);
       //START
 
       //TITLE

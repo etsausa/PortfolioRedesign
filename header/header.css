@@ -28,7 +28,6 @@ header > h3 > img, header.full > h3 > img{
     animation-duration: 1s;
 }
 
-
 header > h3 > img:hover{
     animation-name: turn;
     animation-duration: 4s;
@@ -90,10 +89,19 @@ header.full{
     header.full > h1, header.full > h3 {
 
         left: 50%;
-        max-width: 75vw;
+        /* max-width: 220vw; */
+
+        overflow: hidden;
+        white-space: nowrap;
         
         transform: translateX(-50%); 
     }
+    @media (max-width: 525px){
+        header.full > h1{ 
+            white-space: normal;
+        }
+    }
+
    
 /* -------------------------------------------------SMALL --------------------- */
                                                  /* CONTAINER */
@@ -124,6 +132,7 @@ header.small{
     header.small > h3#img{ 
         transform: rotate(0.25turn) translate(-4rem, 4rem) scale(0.75);
     }
+
     @media (max-width: 525px){
         header.small > h3#img{ 
             transform: rotate(0.25turn) translate(-5rem, 5rem) scale(0.75);

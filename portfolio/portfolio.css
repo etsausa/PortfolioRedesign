@@ -1,0 +1,26 @@
+#portfolio{
+
+}
+
+.projectTitleButton{
+    font-weight: bold;
+
+    padding: 1rem;
+    margin: 1rem;
+
+    border: 1px solid white;
+    border-radius: 1rem;
+    transition: all 1s;
+
+}
+
+.projectTitleButton:hover{
+    color: var(--background);
+    background-color: var(--text);
+}
+
+.slider{
+    display: flex; 
+    flex-direction: row;
+    
+}
